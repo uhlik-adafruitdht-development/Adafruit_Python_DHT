@@ -103,6 +103,9 @@ def pi_version():
     elif match.group(1) == 'BCM2709':
         # Pi 2
         return 2
+    elif match.group(1) == 'BCM2711':
+        # Pi 4
+        return 3
     elif match.group(1) == 'BCM2835':
         # Pi 3 or Pi 4
         return 3
